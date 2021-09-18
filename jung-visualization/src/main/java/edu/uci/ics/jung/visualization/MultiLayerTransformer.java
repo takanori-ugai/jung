@@ -1,28 +1,35 @@
 package edu.uci.ics.jung.visualization;
 
-import java.awt.Shape;
-import java.awt.geom.Point2D;
-
 import edu.uci.ics.jung.visualization.transform.BidirectionalTransformer;
 import edu.uci.ics.jung.visualization.transform.MutableTransformer;
 import edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer;
 import edu.uci.ics.jung.visualization.util.ChangeEventSupport;
+import java.awt.Shape;
+import java.awt.geom.Point2D;
 
-public interface MultiLayerTransformer extends BidirectionalTransformer, ShapeTransformer, ChangeEventSupport {
+public interface MultiLayerTransformer
+    extends BidirectionalTransformer, ShapeTransformer, ChangeEventSupport {
 
-	
-	void setTransformer(Layer layer, MutableTransformer Function);
+  enum Layer {
+    LAYOUT,
+    VIEW
+  }
 
-	MutableTransformer getTransformer(Layer layer);
+  void setTransformer(Layer layer, MutableTransformer Function);
 
-	Point2D inverseTransform(Layer layer, Point2D p);
+  MutableTransformer getTransformer(Layer layer);
 
-	Point2D transform(Layer layer, Point2D p);
+  Point2D inverseTransform(Layer layer, Point2D p);
 
-	Shape transform(Layer layer, Shape shape);
-	
-	Shape inverseTransform(Layer layer, Shape shape);
+  Point2D inverseTransform(Layer layer, double x, double y);
 
-	void setToIdentity();
+  Point2D transform(Layer layer, Point2D p);
 
+  Point2D transform(Layer layer, double x, double y);
+
+  Shape transform(Layer layer, Shape shape);
+
+  Shape inverseTransform(Layer layer, Shape shape);
+
+  void setToIdentity();
 }

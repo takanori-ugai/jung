@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2003, The JUNG Authors 
+ * Copyright (c) 2003, The JUNG Authors
  *
  * All rights reserved.
  *
@@ -15,15 +15,15 @@ package edu.uci.ics.jung.visualization.control;
 import java.awt.event.MouseEvent;
 
 /**
- * This interface allows users to register listeners to register to receive
- * vertex clicks.
- * 
+ * This interface allows users to register listeners to register to receive node clicks.
+ *
  * @author danyelf
  */
-public interface GraphMouseListener<V> {
+public interface GraphMouseListener<N> {
 
-	void graphClicked(V v, MouseEvent me);
-	void graphPressed(V v, MouseEvent me);
-	void graphReleased(V v, MouseEvent me);
+  void graphClicked(N v, MouseEvent me);
 
+  void graphPressed(N v, MouseEvent me);
+
+  void graphReleased(N v, MouseEvent me);
 }
