@@ -76,7 +76,7 @@
     <jar.plugin.version>2.6</jar.plugin.version>
     <javadoc.plugin.version>2.10.4</javadoc.plugin.version>
     <jxr.plugin.version>2.5</jxr.plugin.version>
-    <pmd.plugin.version>3.8</pmd.plugin.version>
+    <pmd.plugin.version>3.21.2</pmd.plugin.version>
     <release.plugin.version>2.5.3</release.plugin.version>
     <source.plugin.version>3.3.0</source.plugin.version>
     <spotless.plugin.version>2.29.0</spotless.plugin.version>
