@@ -80,7 +80,7 @@
     <release.plugin.version>2.5.3</release.plugin.version>
     <source.plugin.version>3.3.0</source.plugin.version>
     <spotless.plugin.version>2.41.1</spotless.plugin.version>
-    <surefire.plugin.version>2.19.1</surefire.plugin.version>
+    <surefire.plugin.version>3.2.3</surefire.plugin.version>
   </properties>
   <developers>
     <developer>
