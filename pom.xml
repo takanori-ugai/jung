@@ -66,7 +66,7 @@
     <java.version>1.8</java.version>
 
     <junit.version>4.13.2</junit.version>
-    <truth.version>1.4.1</truth.version>
+    <truth.version>1.4.2</truth.version>
     <guava.version>33.1.0-jre</guava.version>
     <google-java-format.version>1.15.0</google-java-format.version>
 
