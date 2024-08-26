@@ -75,7 +75,7 @@
     <gpg.plugin.version>3.2.5</gpg.plugin.version>
     <jar.plugin.version>2.6</jar.plugin.version>
     <javadoc.plugin.version>3.8.0</javadoc.plugin.version>
-    <jxr.plugin.version>3.4.0</jxr.plugin.version>
+    <jxr.plugin.version>3.5.0</jxr.plugin.version>
     <pmd.plugin.version>3.24.0</pmd.plugin.version>
     <release.plugin.version>3.1.1</release.plugin.version>
     <source.plugin.version>3.3.1</source.plugin.version>
