@@ -11,7 +11,7 @@
   <description>Core visualization support for the JUNG project</description>
   <properties>
     <version.slf4j>2.0.16</version.slf4j>
-    <version.logback>1.5.11</version.logback>
+    <version.logback>1.5.12</version.logback>
   </properties>
   <dependencies>
      <dependency>
