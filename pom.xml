@@ -67,20 +67,20 @@
 
     <junit.version>4.13.2</junit.version>
     <truth.version>1.4.4</truth.version>
-    <guava.version>33.2.1-jre</guava.version>
+    <guava.version>33.4.7-jre</guava.version>
     <google-java-format.version>1.15.0</google-java-format.version>
 
     <cobertura.plugin.version>2.7</cobertura.plugin.version>
-    <compiler.plugin.version>3.13.0</compiler.plugin.version>
-    <gpg.plugin.version>3.2.4</gpg.plugin.version>
+    <compiler.plugin.version>3.14.0</compiler.plugin.version>
+    <gpg.plugin.version>3.2.7</gpg.plugin.version>
     <jar.plugin.version>2.6</jar.plugin.version>
-    <javadoc.plugin.version>3.7.0</javadoc.plugin.version>
-    <jxr.plugin.version>3.4.0</jxr.plugin.version>
-    <pmd.plugin.version>3.23.0</pmd.plugin.version>
-    <release.plugin.version>3.1.0</release.plugin.version>
+    <javadoc.plugin.version>3.11.2</javadoc.plugin.version>
+    <jxr.plugin.version>3.6.0</jxr.plugin.version>
+    <pmd.plugin.version>3.26.0</pmd.plugin.version>
+    <release.plugin.version>3.1.1</release.plugin.version>
     <source.plugin.version>3.3.1</source.plugin.version>
-    <spotless.plugin.version>2.43.0</spotless.plugin.version>
-    <surefire.plugin.version>3.3.0</surefire.plugin.version>
+    <spotless.plugin.version>2.44.4</spotless.plugin.version>
+    <surefire.plugin.version>3.5.3</surefire.plugin.version>
   </properties>
   <developers>
     <developer>
@@ -130,11 +130,6 @@
       <dependency>
         <groupId>com.google.truth</groupId>
         <artifactId>truth</artifactId>
-        <version>${truth.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.truth.extensions</groupId>
-        <artifactId>truth-java8-extension</artifactId>
         <version>${truth.version}</version>
       </dependency>
       <dependency>
