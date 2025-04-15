@@ -12,7 +12,6 @@ package edu.uci.ics.jung.graph;
 
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
-import static com.google.common.truth.Truth8.assertThat;
 import static edu.uci.ics.jung.graph.TestUtil.FAIL_ERROR_ELEMENT_NOT_IN_TREE;
 import static edu.uci.ics.jung.graph.TestUtil.FAIL_ERROR_NODEU_NOT_IN_TREE;
 import static edu.uci.ics.jung.graph.TestUtil.FAIL_ERROR_NODEV_IN_TREE;
