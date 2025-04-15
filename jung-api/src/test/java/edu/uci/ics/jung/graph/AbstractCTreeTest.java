@@ -10,7 +10,7 @@
 
 package edu.uci.ics.jung.graph;
 
-import static com.google.common.truth.Truth.assertThat;
+import static com.google.common.truth.Truth8.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
 import static edu.uci.ics.jung.graph.TestUtil.FAIL_ERROR_ELEMENT_NOT_IN_TREE;
 import static edu.uci.ics.jung.graph.TestUtil.FAIL_ERROR_NODEU_NOT_IN_TREE;
@@ -471,12 +471,12 @@ public abstract class AbstractCTreeTest {
   @Test
   public void depth_multipleEdges() {
     buildTreeWithMultipleEdges();
-    assertWithMessage("tree.depth(%s)", N1).that(tree.depth(N1)).isEqualTo(0);
-    assertWithMessage("tree.depth(%s)", N2).that(tree.depth(N2)).isEqualTo(1);
-    assertWithMessage("tree.depth(%s)", N3).that(tree.depth(N3)).isEqualTo(1);
-    assertWithMessage("tree.depth(%s)", N4).that(tree.depth(N4)).isEqualTo(2);
-    assertWithMessage("tree.depth(%s)", N5).that(tree.depth(N5)).isEqualTo(2);
-    assertWithMessage("tree.depth(%s)", N6).that(tree.depth(N6)).isEqualTo(3);
+    assertWithMessage(String.format("tree.depth(%s)", N1)).that(tree.depth(N1)).isEqualTo(0);
+    assertWithMessage(String.format("tree.depth(%s)", N2)).that(tree.depth(N2)).isEqualTo(1);
+    assertWithMessage(String.format("tree.depth(%s)", N3)).that(tree.depth(N3)).isEqualTo(1);
+    assertWithMessage(String.format("tree.depth(%s)", N4)).that(tree.depth(N4)).isEqualTo(2);
+    assertWithMessage(String.format("tree.depth(%s)", N5)).that(tree.depth(N5)).isEqualTo(2);
+    assertWithMessage(String.format("tree.depth(%s)", N6)).that(tree.depth(N6)).isEqualTo(3);
   }
 
   @Test

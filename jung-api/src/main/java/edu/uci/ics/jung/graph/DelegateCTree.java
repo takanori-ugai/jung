@@ -233,9 +233,15 @@ class DelegateCTree<N> extends AbstractGraph<N> implements MutableCTree<N> {
     if (!nodes().contains(node)) {
       return false;
     }
+    List<N> nodesR = new ArrayList<>();
     for (N nodeToRemove : Traverser.forTree(delegate).breadthFirst(node)) {
-      delegate.removeNode(nodeToRemove);
-      depths.remove(nodeToRemove);
+      nodesR.add(nodeToRemove);
+//      delegate.removeNode(nodeToRemove);
+//      depths.remove(nodeToRemove);
+    }
+    for(N nodeR: nodesR) {
+        delegate.removeNode(nodeR);
+        depths.remove(nodeR);
     }
     if (root.isPresent() && root.get().equals(node)) {
       setRoot(Optional.empty());

@@ -65,22 +65,22 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
 
-    <junit.version>4.13.1</junit.version>
-    <truth.version>1.4.2</truth.version>
-    <guava.version>32.0.0-jre</guava.version>
+    <junit.version>4.13.2</junit.version>
+    <truth.version>1.4.1</truth.version>
+    <guava.version>33.4.7-jre</guava.version>
     <google-java-format.version>1.15.0</google-java-format.version>
 
     <cobertura.plugin.version>2.7</cobertura.plugin.version>
-    <compiler.plugin.version>3.5.1</compiler.plugin.version>
-    <gpg.plugin.version>1.6</gpg.plugin.version>
+    <compiler.plugin.version>3.14.0</compiler.plugin.version>
+    <gpg.plugin.version>3.2.7</gpg.plugin.version>
     <jar.plugin.version>2.6</jar.plugin.version>
-    <javadoc.plugin.version>2.10.4</javadoc.plugin.version>
-    <jxr.plugin.version>2.5</jxr.plugin.version>
-    <pmd.plugin.version>3.8</pmd.plugin.version>
-    <release.plugin.version>2.5.3</release.plugin.version>
-    <source.plugin.version>3.0.1</source.plugin.version>
-    <spotless.plugin.version>2.29.0</spotless.plugin.version>
-    <surefire.plugin.version>2.19.1</surefire.plugin.version>
+    <javadoc.plugin.version>3.11.2</javadoc.plugin.version>
+    <jxr.plugin.version>3.6.0</jxr.plugin.version>
+    <pmd.plugin.version>3.26.0</pmd.plugin.version>
+    <release.plugin.version>3.1.1</release.plugin.version>
+    <source.plugin.version>3.3.1</source.plugin.version>
+    <spotless.plugin.version>2.44.4</spotless.plugin.version>
+    <surefire.plugin.version>3.5.3</surefire.plugin.version>
   </properties>
   <developers>
     <developer>
@@ -169,7 +169,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>{release.plugin.version}</version>
+          <version>${release.plugin.version}</version>
           <configuration>
             <mavenExecutorId>forked-path</mavenExecutorId>
             <useReleaseProfile>false</useReleaseProfile>
