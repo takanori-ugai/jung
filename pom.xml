@@ -79,7 +79,7 @@
     <pmd.plugin.version>3.28.0</pmd.plugin.version>
     <release.plugin.version>3.2.0</release.plugin.version>
     <source.plugin.version>3.3.1</source.plugin.version>
-    <spotless.plugin.version>3.0.0</spotless.plugin.version>
+    <spotless.plugin.version>3.1.0</spotless.plugin.version>
     <surefire.plugin.version>3.5.4</surefire.plugin.version>
   </properties>
   <developers>
