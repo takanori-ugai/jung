@@ -14,7 +14,7 @@
   </description>
   <properties>
     <version.slf4j>1.7.25</version.slf4j>
-    <version.logback>1.5.26</version.logback>
+    <version.logback>1.5.27</version.logback>
   </properties>
   <dependencies>
     <dependency>
