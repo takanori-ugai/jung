@@ -36,7 +36,7 @@ jobs:
 
     - name: Upload coverage reports to Codecov
       if: matrix.java_version == 21
-      uses: codecov/codecov-action@v5.0.0
+      uses: codecov/codecov-action@v7.1.1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: takanori-ugai/jung
