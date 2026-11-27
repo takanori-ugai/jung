@@ -23,6 +23,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v7.0.1
+      with:
+        fetch-depth: 2
     - name: Set up JDK ${{ matrix.java_version }}
       uses: actions/setup-java@v6.3.0
       with:
@@ -31,9 +33,11 @@ jobs:
         cache: maven
     - name: Build with Maven & JDK ${{ matrix.java_version }}
       run: mvn -B package --file pom.xml
-      
+
     - name: Upload coverage reports to Codecov
+      if: matrix.java_version == 21
       uses: codecov/codecov-action@v5
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: takanori-ugai/jung
+        fail_ci_if_error: true
